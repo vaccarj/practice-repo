@@ -11,8 +11,8 @@ git clone git@github.com:username/repo-name.git
 Confirm that git is working in the local repository:
 ```
 ls -la
+> .git # you should see this directory in the local folder, indicating git is working
 ```
-Should see a .git directory in the local folder, indicating git is working.
 
 As you work, check file statuses. Will show you modified and untracked files.
 ```
@@ -29,13 +29,38 @@ Commit the changes to the _local_ repository, including a message:
 ```
 git commit -m "Updated README.md"
 ```
-Note that you can include multiple messages like so: -m "message 1" -m "message 2"
+
+Note that you can include multiple messages like so: 
+```
+git commit -m "Message 1" -m "Message 2"
+```
+
+You can also add and commit changes at once using
+```
+git commit -am "Message"
 
 Save the changes to the _remote_ repository where the project is hosted:
 ``` 
 git push origin main
 ```
 Origin represents the location of the remote git repository. Main in this case is the branch we want to push to.
+
+Made a mistake? To undo an add, use
+```
+git reset filename
+```
+
+To undo the most recent commit, point the HEAD one step back to the previous commit:
+```
+git reset HEAD~1
+```
+
+To reset back to a particular commit, use
+```
+git log # find the hash of the commit you want
+git reset hash
+```
+This will unstage all commits after the hash. Using git reset --hard will completely remove the unstage commits.
 
 
 ## branching tutorial
@@ -46,7 +71,7 @@ git branch
 ```
 The branch with the star next to it is the one you are currently on.
 
-Create a new branch called "featured". The -b tells it you are creating the branch. git checkout branch-name is used to switch between existing branches.
+Create a new branch called "feature". The -b tells it you are creating the branch. Checkout is used to switch to a different branch.
 ```
 git checkout -b new-branch-name
 ```
@@ -71,9 +96,9 @@ As you're working on your new branch, you can pull updates from main into the ne
 ```
 git merge main
 ```
-Though you might need to resolve conflicts.
+(though you might need to resolve conflicts)
 
-It's easiest to merge branches and resolve conflicts on the github interface or directly in the code if using something like visual studio. After that, if you would like to see the updates to main in the local repository, use:
+It's easiest to merge branches and resolve conflicts on the github interface or directly in the code. After that, if you would like to see the updates to main in the local repository, use:
 ```
 git pull origin main
 ```
