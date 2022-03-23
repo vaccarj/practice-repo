@@ -1,7 +1,7 @@
-
 ## basic git commands
 
 Following this tutorial: https://www.youtube.com/watch?v=RGOj5yH7evk&t=1608s. Includes instructions for setting up ssh keys, which are necessary for establishing a connection with the remote repository. 
+
 
 Clone the repository into the local directory:
 ``` 
