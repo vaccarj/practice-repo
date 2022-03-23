@@ -67,9 +67,15 @@ Push changes to the new branch in the remote repository:
 git push origin feature
 ```
 
+As you're working on your new branch, you can pull updates from main into the new branch using
+```
+git merge main
+```
+Though you might need to resolve conflicts.
+
 It's easiest to merge branches and resolve conflicts on the github interface. After that, if you would like to see the updates to main in the local repository, use:
 ```
-git pull origin master
+git pull origin main
 ```
 
 To delete a branch after you merge:
