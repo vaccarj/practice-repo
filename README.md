@@ -36,3 +36,16 @@ Note that you can include multiple messages like so: -m "message 1" -m "message 
 git push origin main
 ```
 Origin represents the location of the remote git repository. Main in this case is the branch we want to push to.
+
+# branching tutorial
+
+View branches that currently exist:
+```
+git branch
+```
+The branch with the star next to it is the one you are currently on.
+
+Create a new branch called "featured". The -b tells it you are creating the branch. git checkout branch-name is used to switch between existing branches.
+```
+git checkout -b new-branch-name
+```
