@@ -66,3 +66,14 @@ Push changes to the new branch in the remote repository:
 ```
 git push origin feature
 ```
+
+It's easiest to merge branches and resolve conflicts on the github interface. After that, if you would like to see the updates to main in the local repository, use:
+```
+git pull origin master
+```
+
+To delete a branch after you merge:
+```
+git branch -d branch-name
+```
+
