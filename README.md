@@ -49,3 +49,14 @@ Create a new branch called "featured". The -b tells it you are creating the bran
 ```
 git checkout -b new-branch-name
 ```
+
+Then do the usuals, edit files, etc:
+```
+git add .
+git commit -m "Message"
+```
+
+How does the current branch differ from main?
+```
+git diff
+```
