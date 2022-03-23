@@ -38,6 +38,7 @@ git commit -m "Message 1" -m "Message 2"
 You can also add and commit changes at once using
 ```
 git commit -am "Message"
+```
 
 Save the changes to the _remote_ repository where the project is hosted:
 ``` 
