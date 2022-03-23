@@ -73,7 +73,7 @@ git merge main
 ```
 Though you might need to resolve conflicts.
 
-It's easiest to merge branches and resolve conflicts on the github interface. After that, if you would like to see the updates to main in the local repository, use:
+It's easiest to merge branches and resolve conflicts on the github interface or directly in the code if using something like visual studio. After that, if you would like to see the updates to main in the local repository, use:
 ```
 git pull origin main
 ```
