@@ -38,7 +38,7 @@ git push origin main
 Origin represents the location of the remote git repository. Main in this case is the branch we want to push to.
 
 
-# branching tutorial
+## branching tutorial
 
 View branches that currently exist:
 ```
@@ -60,4 +60,9 @@ git commit -m "Message"
 How does the current branch differ from main?
 ```
 git diff
+```
+
+Push changes to the new branch in the remote repository:
+```
+git push origin feature
 ```
